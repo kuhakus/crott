@@ -44,26 +44,10 @@ $headers[] = 'X-Location: -6.405821,106.064193';
     echo "[+] File Token saved in ".$live." \n";
     echo "[+]Process Redeem GOFOODBOBA07 \n";
                 sleep(5);
-				$data3 = '{"promo_code":"GOFOODBOBA07"}';
+				$data3 = '{"promo_code":"GOFOODYUK"}';
 				$claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 				$claims = json_decode($claim[0]);
 					echo $claims->data->message;
-					echo "\n";
-					echo "Tunggu 15 Detik!\n";
-					sleep(15);
-					echo "[+]Process Redeem COBAINGOJEK \n";
-				$data4 = '{"promo_code":"COBAINGOJEK"}';
-				$claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
-				$claims1 = json_decode($claim1[0]);
-					echo $claims1->data->message;
-					echo "\n";
-					echo "Tunggu 15 Detik!\n";
-					sleep(15);
-					echo "[+]Process Redeem AYOCOBAGOJEK \n";
-				$data5 = '{"promo_code":"AYOCOBAGOJEKGOJEK"}';
-				$claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
-				$claims2 = json_decode($claim2[0]);
-					echo $claims2->data->message;
 					}
 					}
     function nama()
