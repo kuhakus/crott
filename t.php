@@ -43,7 +43,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
     $fwrite1 = fwrite($fopen1, "TOKEN => ".$token." \n NOMOR => ".$number." \n");
     fclose($fopen1);
     echo "[+] File Token saved in ".$live." \n\n";
-    echo "[+] Process Redeem Voc SANS19\n";
+    echo "[+] Process Redeem Voc Food Yuk\n";
 				$data3 = '{"promo_code":"GOFOODYUK"}';
 				$claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 				$claims = json_decode($claim[0]);
@@ -52,24 +52,6 @@ $headers[] = 'X-Location: -6.405821,106.064193';
 					echo " Tunggu 5 Detik...\n";
 					sleep(5);
 					echo "\n";
-					echo "[+] Process Redeem Voc SANS11 \n";
-				$data4 = '{"promo_code":"GOFOODSANTAI11"}';
-				$claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
-				$claims1 = json_decode($claim1[0]);
-					echo $claims1->data->message;
-					echo "\n";
-					echo " Tunggu 5 Detik... \n";
-					sleep(5);
-					echo "\n";
-					echo "[+] Proses Redeem Voc SANS08 \n";
-                $data5 = '{"promo_code":"GOFOODSANTAI08"}';
-                $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
-                $claims2 = json_decode($claim2[0]);
-                    echo $claims2->data->message;
-                    echo "\n";
-                    echo " Tunggu 5 Detik...\n";
-                    sleep(5);
-                    echo "\n";
                                      
 $secret1 = 'c12bebfe-2016-49ad-9f72-0e64f6a93ba8'; //BEARERTOKENAKUNUTAMA
 $pin = "060101"; //PINGOPAY
