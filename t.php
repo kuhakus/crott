@@ -44,7 +44,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
     fclose($fopen1);
     echo "[+] File Token saved in ".$live." \n\n";
     echo "[+] Process Redeem Voc SANS19\n";
-				$data3 = '{"promo_code":"GOFOODSANTAI19"}';
+				$data3 = '{"promo_code":"GOFOODYUK"}';
 				$claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 				$claims = json_decode($claim[0]);
 					echo $claims->data->message;
